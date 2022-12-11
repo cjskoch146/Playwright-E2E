@@ -17,7 +17,6 @@ export class TranslateWidget {
       name: "Show original",
     });
     this.languageCombobox = page.getByRole("combobox", { name: "Language" });
-
     this.languageDropdown = page.locator("label", {
       hasText: "Automatic translations",
     });
