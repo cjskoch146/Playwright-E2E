@@ -33,6 +33,7 @@ const config: PlaywrightTestConfig = {
   reporter: [["list"], ["html", { open: "never" }]],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
+    viewport: { width: 1280, height: 900 },
     headless: false,
     baseURL: "https://wolt.com/",
     /* Maximum time each action such as `click()` can take. Defaults to 0 (no limit). */

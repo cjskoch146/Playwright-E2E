@@ -18,5 +18,25 @@ test.describe("User", () => {
     await privacyBanner.acceptCookies();
   });
 
-  test("can translate venue menu", async ({ page }) => {});
+  test("can translate venue menu", async ({ page }) => {
+    await page
+      .getByText(
+        "This product offering is in German. Would you like to view a machine translation"
+      )
+      .click();
+    await page.getByRole("button", { name: "Translate" }).click();
+    await page.locator(".VenueInfoWidget__Root-sc-1yv52l9-0").click();
+    await page.getByRole("button", { name: "Show original" }).click();
+    await page.getByRole("button", { name: "Translate" }).click();
+    await page
+      .locator("#mainContent div")
+      .filter({
+        hasText:
+          "NEW: archipel. 🤩NEW PRODUCTS 📢BBQ & Grills 🍗DEALS FRESH BERLIN BAKED GOODS 🥖",
+      })
+      .nth(2)
+      .click({
+        button: "right",
+      });
+  });
 });
