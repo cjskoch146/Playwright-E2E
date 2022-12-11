@@ -7,36 +7,39 @@
 // done
 
 import { PrivacyBanner } from "./page-object/cookies/privacy-banner";
-
+import { TranslateWidget } from "./page-object/market-page/translate";
 import { test, expect } from "@playwright/test";
 
 test.describe("User", () => {
   test.beforeEach(async ({ page }) => {
     const privacyBanner = new PrivacyBanner(page);
 
-    await page.goto("/en/deu/berlin/venue/wolt-market-danziger-strasse");
+    await page.goto("/en/deu/berlin/venue/wolt-market-danziger-strasse", {
+      waitUntil: "networkidle",
+    });
     await privacyBanner.acceptCookies();
   });
 
   test("can translate venue menu", async ({ page }) => {
-    await page
-      .getByText(
-        "This product offering is in German. Would you like to view a machine translation"
-      )
-      .click();
-    await page.getByRole("button", { name: "Translate" }).click();
-    await page.locator(".VenueInfoWidget__Root-sc-1yv52l9-0").click();
-    await page.getByRole("button", { name: "Show original" }).click();
-    await page.getByRole("button", { name: "Translate" }).click();
-    await page
-      .locator("#mainContent div")
-      .filter({
-        hasText:
-          "NEW: archipel. 🤩NEW PRODUCTS 📢BBQ & Grills 🍗DEALS FRESH BERLIN BAKED GOODS 🥖",
-      })
-      .nth(2)
-      .click({
-        button: "right",
-      });
+    const translateWidget = new TranslateWidget(page);
+    await expect(translateWidget.translationNotice).toBeVisible();
+    await expect(translateWidget.translationNotice).toContainText(
+      "This product offering is in German"
+    );
+    await expect(translateWidget.translateBtn).toBeVisible();
+    await translateWidget.translateBtn.focus();
+    await translateWidget.translateBtn.click();
+    await expect(translateWidget.languageCombobox).toBeVisible();
+    await translateWidget.languageCombobox.click();
+    await translateWidget.languageCombobox.selectOption({ index: 1 });
+
+    await expect(translateWidget.showOriginalLanguageBtn).toBeVisible();
+    await expect(translateWidget.showOriginalLanguageBtn).toHaveText(
+      "Show original"
+    );
+    await expect(translateWidget.translateBtn).not.toBeVisible();
+    await expect(translateWidget.translationNotice).toContainText(
+      "This product offering was translated from German to English by a machine."
+    );
   });
 });
