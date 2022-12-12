@@ -12,6 +12,7 @@ import { devices } from "@playwright/test";
  */
 const config: PlaywrightTestConfig = {
   testDir: "./tests",
+  globalSetup: require.resolve("./global-setup"),
   /* Maximum time one test can run for. */
   timeout: 30 * 1000,
   expect: {
@@ -35,7 +36,8 @@ const config: PlaywrightTestConfig = {
   use: {
     viewport: { width: 1280, height: 900 },
     headless: false,
-    baseURL: "https://wolt.com/",
+    baseURL:
+      "https://wolt.com/en/deu/berlin/venue/wolt-market-danziger-strasse",
     /* Maximum time each action such as `click()` can take. Defaults to 0 (no limit). */
     actionTimeout: 0,
     /* Base URL to use in actions like `await page.goto('/')`. */
@@ -51,6 +53,7 @@ const config: PlaywrightTestConfig = {
       name: "chromium",
       use: {
         ...devices["Desktop Chrome"],
+        storageState: "storageState.json",
       },
     },
 
