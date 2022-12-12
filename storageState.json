@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "__woltUidProspect",
-      "value": "95352ee9-8220-4c24-8e0d-564acb7b968b",
+      "value": "8406fb60-d59a-4cef-b320-bdb5e42ab928",
       "domain": ".wolt.com",
       "path": "/",
-      "expires": 1670805006.697474,
+      "expires": 1670809809.025281,
       "httpOnly": false,
       "secure": true,
       "sameSite": "Lax"
     },
     {
       "name": "__woltAnalyticsId",
-      "value": "4e356748-ed81-427e-8f14-315193239fe5",
+      "value": "d49eda22-800a-4637-93ac-a51cef5d11d3",
       "domain": ".wolt.com",
       "path": "/",
-      "expires": 1670805010.126763,
+      "expires": 1670809813.431061,
       "httpOnly": false,
       "secure": true,
       "sameSite": "Lax"
@@ -32,17 +32,17 @@
     },
     {
       "name": "ravelinDeviceId",
-      "value": "rjs-895eb42c-257e-4e5d-9ede-8db3d9d1f4d9",
+      "value": "rjs-ea0b157c-53ac-4674-a8e1-7c8b2e67ae30",
       "domain": ".wolt.com",
       "path": "/",
-      "expires": 1702339209,
+      "expires": 1702344012,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "ravelinSessionId",
-      "value": "rjs-895eb42c-257e-4e5d-9ede-8db3d9d1f4d9:2ae1cd99-c20f-4b17-bc4d-c5dff73e6c5a",
+      "value": "rjs-ea0b157c-53ac-4674-a8e1-7c8b2e67ae30:be12419f-727f-40e5-83bf-ad6fb8c17b1d",
       "domain": ".wolt.com",
       "path": "/",
       "expires": -1,
@@ -52,93 +52,43 @@
     },
     {
       "name": "_gcl_au",
-      "value": "1.1.13495748.1670803210",
+      "value": "1.1.1886880144.1670808013",
       "domain": ".wolt.com",
       "path": "/",
-      "expires": 1678579209,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "cwc-consents",
-      "value": "{%22analytics%22:true%2C%22functional%22:true%2C%22marketing%22:true}",
-      "domain": ".wolt.com",
-      "path": "/",
-      "expires": 1705363209.920167,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "__woltUid",
-      "value": "95352ee9-8220-4c24-8e0d-564acb7b968b",
-      "domain": ".wolt.com",
-      "path": "/",
-      "expires": 1705363210.126685,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "test_cookie",
-      "value": "CheckForPermission",
-      "domain": ".doubleclick.net",
-      "path": "/",
-      "expires": 1670804110.192938,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "_gid",
-      "value": "GA1.2.1454859342.1670803210",
-      "domain": ".wolt.com",
-      "path": "/",
-      "expires": 1670889610,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "_gat_UA-56809017-2",
-      "value": "1",
-      "domain": ".wolt.com",
-      "path": "/",
-      "expires": 1670803270,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "_ga",
-      "value": "GA1.1.469223539.1670803210",
-      "domain": ".wolt.com",
-      "path": "/",
-      "expires": 1705363210.368708,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "_ga_CP7Z2F7NFM",
-      "value": "GS1.1.1670803210.1.1.1670803210.60.0.0",
-      "domain": ".wolt.com",
-      "path": "/",
-      "expires": 1705363210.395606,
+      "expires": 1678584012,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_dd_s",
-      "value": "rum=2&id=8f056965-20ac-4126-b6e8-d83e0d2cac6d&created=1670803206783&expire=1670804110406",
+      "value": "rum=2&id=1c792555-c725-4d95-812f-7ae454a0ebd5&created=1670808010157&expire=1670808912658",
       "domain": "wolt.com",
       "path": "/",
-      "expires": 1670804110,
+      "expires": 1670808913,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Strict"
+    },
+    {
+      "name": "cwc-consents",
+      "value": "{%22analytics%22:true%2C%22functional%22:true%2C%22marketing%22:true}",
+      "domain": ".wolt.com",
+      "path": "/",
+      "expires": 1705368013.261145,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__woltUid",
+      "value": "8406fb60-d59a-4cef-b320-bdb5e42ab928",
+      "domain": ".wolt.com",
+      "path": "/",
+      "expires": 1705368013.430924,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
     }
   ],
   "origins": [
@@ -147,27 +97,23 @@
       "localStorage": [
         {
           "name": "AvoInspectorSessionTimestamp",
-          "value": "1670803210148"
+          "value": "1670808013390"
         },
         {
           "name": "bugsnag-anonymous-id",
-          "value": "clbk139s800003f6gnm9rtrg0"
+          "value": "clbk3y82p00003f6g36o4y3q3"
         },
         {
           "name": "AvoInspectorEvents",
-          "value": "[{\"apiKey\":\"BIxOURRemZ1gBoZwl9U1\",\"appName\":\"Consumer Web\",\"appVersion\":\"1.9.24\",\"libVersion\":\"1.3.0\",\"env\":\"prod\",\"libPlatform\":\"web\",\"messageId\":\"adae6433-72f2-4813-bf79-b2afabc45d05\",\"trackingId\":\"d57df301-fea6-447b-bc8e-a80a462d5fec\",\"createdAt\":\"2022-12-12T00:00:10.147Z\",\"sessionId\":\"c543ba41-02c8-4932-95ab-34f1dde9b035\",\"samplingRate\":1,\"type\":\"sessionStarted\"},{\"apiKey\":\"BIxOURRemZ1gBoZwl9U1\",\"appName\":\"Consumer Web\",\"appVersion\":\"1.9.24\",\"libVersion\":\"1.3.0\",\"env\":\"prod\",\"libPlatform\":\"web\",\"messageId\":\"6a55559d-e4c2-41eb-9cc8-07dc28e6605d\",\"trackingId\":\"d57df301-fea6-447b-bc8e-a80a462d5fec\",\"createdAt\":\"2022-12-12T00:00:10.148Z\",\"sessionId\":\"c543ba41-02c8-4932-95ab-34f1dde9b035\",\"samplingRate\":1,\"type\":\"event\",\"eventName\":\"session_start\",\"eventProperties\":[{\"propertyName\":\"referrer_type\",\"propertyType\":\"string\"},{\"propertyName\":\"referred_link\",\"propertyType\":\"string\"},{\"propertyName\":\"referred_link_parameters\",\"propertyType\":\"object\",\"children\":[]}],\"avoFunction\":false,\"eventId\":null,\"eventHash\":null}]"
-        },
-        {
-          "name": "intercom.intercom-state",
-          "value": "{\"app\":{\"openConfig\":{\"spaces\":[],\"userHasReceivedChecklists\":false},\"features\":{\"anonymousInboundMessages\":false,\"googleAnalytics\":false,\"inboundMessages\":false,\"outboundMessages\":false,\"googleAnalytics4Integration\":false},\"boundWebEvents\":[],\"isInstantBootEnabled\":true,\"isDeveloperWorkspace\":false},\"launcher\":{\"isLauncherEnabled\":false},\"launcherDiscoveryMode\":{\"hasDiscoveredLauncher\":false},\"user\":{},\"message\":{},\"conversations\":{\"byId\":{}},\"openOnBoot\":{\"type\":null,\"metadata\":{}},\"operator\":{\"lastComposerEvent\":0},\"router\":{\"location\":null,\"action\":null,\"previousLocations\":[]}}"
+          "value": "[{\"apiKey\":\"BIxOURRemZ1gBoZwl9U1\",\"appName\":\"Consumer Web\",\"appVersion\":\"1.9.24\",\"libVersion\":\"1.3.0\",\"env\":\"prod\",\"libPlatform\":\"web\",\"messageId\":\"9972ed45-e2b8-4cb8-9e2e-06f211cc5bc2\",\"trackingId\":\"aaedc5b6-611f-4433-aad0-5448f1afd54e\",\"createdAt\":\"2022-12-12T01:20:13.389Z\",\"sessionId\":\"4aca5c8b-5bf6-41ef-ac96-67309d8c8e11\",\"samplingRate\":1,\"type\":\"sessionStarted\"},{\"apiKey\":\"BIxOURRemZ1gBoZwl9U1\",\"appName\":\"Consumer Web\",\"appVersion\":\"1.9.24\",\"libVersion\":\"1.3.0\",\"env\":\"prod\",\"libPlatform\":\"web\",\"messageId\":\"104f0dc9-1df0-4b0d-bc93-cea225fa3b4a\",\"trackingId\":\"aaedc5b6-611f-4433-aad0-5448f1afd54e\",\"createdAt\":\"2022-12-12T01:20:13.390Z\",\"sessionId\":\"4aca5c8b-5bf6-41ef-ac96-67309d8c8e11\",\"samplingRate\":1,\"type\":\"event\",\"eventName\":\"session_start\",\"eventProperties\":[{\"propertyName\":\"referrer_type\",\"propertyType\":\"string\"},{\"propertyName\":\"referred_link\",\"propertyType\":\"string\"},{\"propertyName\":\"referred_link_parameters\",\"propertyType\":\"object\",\"children\":[]}],\"avoFunction\":false,\"eventId\":null,\"eventHash\":null}]"
         },
         {
           "name": "AvoInspectorSessionId",
-          "value": "\"c543ba41-02c8-4932-95ab-34f1dde9b035\""
+          "value": "\"4aca5c8b-5bf6-41ef-ac96-67309d8c8e11\""
         },
         {
           "name": "AvoInstallationId",
-          "value": "\"d57df301-fea6-447b-bc8e-a80a462d5fec\""
+          "value": "\"aaedc5b6-611f-4433-aad0-5448f1afd54e\""
         }
       ]
     }
