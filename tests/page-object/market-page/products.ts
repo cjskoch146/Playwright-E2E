@@ -38,13 +38,13 @@ export class Products {
   async searchForProduct(productName, amountOfResults) {
     await expect(this.productSearch).toBeVisible();
     await this.productSearch.fill(productName);
-    // await this.page.keyboard.down("PageDown"); // kind of works but hackish
-    // consider:
-    //     await page.$eval(ele, (element) => {
-    //     element.scrollIntoView();
-    // });
+
     await expect(this.menuItem).toHaveCount(amountOfResults);
     await expect(this.productName).toBeVisible();
     await expect(this.productName).toHaveText(productName);
+    let ele = '[data-test-id="MenuItemContentArea"]';
+    await this.page.$eval(ele, (element) => {
+      element.scrollIntoView();
+    });
   }
 }
