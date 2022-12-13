@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "__woltUidProspect",
-      "value": "f7c57a0e-7796-4b32-982a-c410d8be5d4e",
+      "value": "83290083-892b-4ff8-a54b-9dc81ad6043d",
       "domain": ".wolt.com",
       "path": "/",
-      "expires": 1670893557.202654,
+      "expires": 1670893840.835131,
       "httpOnly": false,
       "secure": true,
       "sameSite": "Lax"
     },
     {
       "name": "__woltAnalyticsId",
-      "value": "929068b3-ef4a-41b1-8078-6c2210e3471b",
+      "value": "9d2b9dbb-0958-48b8-8903-95e6da348633",
       "domain": ".wolt.com",
       "path": "/",
-      "expires": 1670893560.854521,
+      "expires": 1670893844.376176,
       "httpOnly": false,
       "secure": true,
       "sameSite": "Lax"
@@ -32,17 +32,17 @@
     },
     {
       "name": "ravelinDeviceId",
-      "value": "rjs-98edb82a-7bd1-45b9-b219-2136e37830f7",
+      "value": "rjs-f4a5d7df-2c9d-42de-a37e-ca2a3758bdde",
       "domain": ".wolt.com",
       "path": "/",
-      "expires": 1702427760,
+      "expires": 1702428043,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "ravelinSessionId",
-      "value": "rjs-98edb82a-7bd1-45b9-b219-2136e37830f7:0010ebc0-fa2d-4f21-ae5a-4251bf610028",
+      "value": "rjs-f4a5d7df-2c9d-42de-a37e-ca2a3758bdde:19377cc6-2b91-4eec-b210-9ba1624ee4cc",
       "domain": ".wolt.com",
       "path": "/",
       "expires": -1,
@@ -52,10 +52,10 @@
     },
     {
       "name": "_gcl_au",
-      "value": "1.1.2040761919.1670891760",
+      "value": "1.1.285858529.1670892044",
       "domain": ".wolt.com",
       "path": "/",
-      "expires": 1678667760,
+      "expires": 1678668043,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -65,57 +65,57 @@
       "value": "{%22analytics%22:true%2C%22functional%22:true%2C%22marketing%22:true}",
       "domain": ".wolt.com",
       "path": "/",
-      "expires": 1705451760.647406,
+      "expires": 1705452044.169722,
       "httpOnly": false,
       "secure": true,
       "sameSite": "Lax"
     },
     {
       "name": "__woltUid",
-      "value": "f7c57a0e-7796-4b32-982a-c410d8be5d4e",
+      "value": "83290083-892b-4ff8-a54b-9dc81ad6043d",
       "domain": ".wolt.com",
       "path": "/",
-      "expires": 1705451760.85443,
+      "expires": 1705452044.37609,
       "httpOnly": false,
       "secure": true,
       "sameSite": "Lax"
-    },
-    {
-      "name": "_dd_s",
-      "value": "rum=2&id=3d1f976a-c794-418f-bcfe-303453a0ba55&created=1670891757276&expire=1670892660852",
-      "domain": "wolt.com",
-      "path": "/",
-      "expires": 1670892660,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Strict"
     },
     {
       "name": "test_cookie",
       "value": "CheckForPermission",
       "domain": ".doubleclick.net",
       "path": "/",
-      "expires": 1670892660.935057,
+      "expires": 1670892944.493783,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
     {
+      "name": "_dd_s",
+      "value": "rum=2&id=5e55668c-ef10-4866-afce-27d71c7cf47b&created=1670892040968&expire=1670892944611",
+      "domain": "wolt.com",
+      "path": "/",
+      "expires": 1670892944,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Strict"
+    },
+    {
       "name": "_ga",
-      "value": "GA1.2.1616640425.1670891761",
+      "value": "GA1.2.1906749523.1670892045",
       "domain": ".wolt.com",
       "path": "/",
-      "expires": 1705451760.977799,
+      "expires": 1705452044.707773,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_gid",
-      "value": "GA1.2.332609028.1670891761",
+      "value": "GA1.2.1991253459.1670892045",
       "domain": ".wolt.com",
       "path": "/",
-      "expires": 1670978160,
+      "expires": 1670978444,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -125,7 +125,7 @@
       "value": "1",
       "domain": ".wolt.com",
       "path": "/",
-      "expires": 1670891820,
+      "expires": 1670892104,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -137,15 +137,15 @@
       "localStorage": [
         {
           "name": "AvoInspectorSessionTimestamp",
-          "value": "1670891760802"
+          "value": "1670892044420"
         },
         {
           "name": "bugsnag-anonymous-id",
-          "value": "clblht7pt00003f6g9iy85loz"
+          "value": "clblhzant00003f6g6615rydh"
         },
         {
           "name": "AvoInspectorEvents",
-          "value": "[{\"apiKey\":\"BIxOURRemZ1gBoZwl9U1\",\"appName\":\"Consumer Web\",\"appVersion\":\"1.9.24-PR7449\",\"libVersion\":\"1.3.0\",\"env\":\"prod\",\"libPlatform\":\"web\",\"messageId\":\"9e7dc3a8-3bb6-49f2-9e69-ccdcf2d84a98\",\"trackingId\":\"58f2460c-73cf-4dcc-8435-e0ac7e50c47f\",\"createdAt\":\"2022-12-13T00:36:00.802Z\",\"sessionId\":\"ea36f5ec-d71f-4958-bb64-4dfbe8dda5ee\",\"samplingRate\":1,\"type\":\"sessionStarted\"},{\"apiKey\":\"BIxOURRemZ1gBoZwl9U1\",\"appName\":\"Consumer Web\",\"appVersion\":\"1.9.24-PR7449\",\"libVersion\":\"1.3.0\",\"env\":\"prod\",\"libPlatform\":\"web\",\"messageId\":\"8c218744-e628-4e83-8083-61b3c583ec49\",\"trackingId\":\"58f2460c-73cf-4dcc-8435-e0ac7e50c47f\",\"createdAt\":\"2022-12-13T00:36:00.803Z\",\"sessionId\":\"ea36f5ec-d71f-4958-bb64-4dfbe8dda5ee\",\"samplingRate\":1,\"type\":\"event\",\"eventName\":\"session_start\",\"eventProperties\":[{\"propertyName\":\"referrer_type\",\"propertyType\":\"string\"},{\"propertyName\":\"referred_link\",\"propertyType\":\"string\"},{\"propertyName\":\"referred_link_parameters\",\"propertyType\":\"object\",\"children\":[]}],\"avoFunction\":false,\"eventId\":null,\"eventHash\":null}]"
+          "value": "[{\"apiKey\":\"BIxOURRemZ1gBoZwl9U1\",\"appName\":\"Consumer Web\",\"appVersion\":\"1.9.24-PR7449\",\"libVersion\":\"1.3.0\",\"env\":\"prod\",\"libPlatform\":\"web\",\"messageId\":\"020aede1-5552-41c6-bbb3-f44ae39db60b\",\"trackingId\":\"fc6be5a3-f613-4c8c-b51f-8b3ef7aa17c4\",\"createdAt\":\"2022-12-13T00:40:44.420Z\",\"sessionId\":\"70c34439-873f-404f-923f-f1366642f2a3\",\"samplingRate\":1,\"type\":\"sessionStarted\"},{\"apiKey\":\"BIxOURRemZ1gBoZwl9U1\",\"appName\":\"Consumer Web\",\"appVersion\":\"1.9.24-PR7449\",\"libVersion\":\"1.3.0\",\"env\":\"prod\",\"libPlatform\":\"web\",\"messageId\":\"f7805a6e-e602-4803-962a-71dcf0230592\",\"trackingId\":\"fc6be5a3-f613-4c8c-b51f-8b3ef7aa17c4\",\"createdAt\":\"2022-12-13T00:40:44.420Z\",\"sessionId\":\"70c34439-873f-404f-923f-f1366642f2a3\",\"samplingRate\":1,\"type\":\"event\",\"eventName\":\"session_start\",\"eventProperties\":[{\"propertyName\":\"referrer_type\",\"propertyType\":\"string\"},{\"propertyName\":\"referred_link\",\"propertyType\":\"string\"},{\"propertyName\":\"referred_link_parameters\",\"propertyType\":\"object\",\"children\":[]}],\"avoFunction\":false,\"eventId\":null,\"eventHash\":null}]"
         },
         {
           "name": "intercom.intercom-state",
@@ -153,11 +153,11 @@
         },
         {
           "name": "AvoInspectorSessionId",
-          "value": "\"ea36f5ec-d71f-4958-bb64-4dfbe8dda5ee\""
+          "value": "\"70c34439-873f-404f-923f-f1366642f2a3\""
         },
         {
           "name": "AvoInstallationId",
-          "value": "\"58f2460c-73cf-4dcc-8435-e0ac7e50c47f\""
+          "value": "\"fc6be5a3-f613-4c8c-b51f-8b3ef7aa17c4\""
         }
       ]
     }
