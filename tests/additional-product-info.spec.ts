@@ -19,8 +19,6 @@ test.describe("User", () => {
     await expect(products.menuGrid).toBeVisible();
 
     // can search for a specific product
-    await page.waitForLoadState("networkidle");
-
     await products.searchForProduct(
       "Salemipina Kirschtomatensauce Bio 330g",
       1
