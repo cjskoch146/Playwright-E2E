@@ -2,20 +2,20 @@
   "cookies": [
     {
       "name": "__woltUidProspect",
-      "value": "8406fb60-d59a-4cef-b320-bdb5e42ab928",
+      "value": "f5a32f5b-1b67-4955-bf3a-c08ec1a43fba",
       "domain": ".wolt.com",
       "path": "/",
-      "expires": 1670809809.025281,
+      "expires": 1670893235.834567,
       "httpOnly": false,
       "secure": true,
       "sameSite": "Lax"
     },
     {
       "name": "__woltAnalyticsId",
-      "value": "d49eda22-800a-4637-93ac-a51cef5d11d3",
+      "value": "8c4a9c99-e386-42d3-9aeb-fcc7a2c67245",
       "domain": ".wolt.com",
       "path": "/",
-      "expires": 1670809813.431061,
+      "expires": 1670893240.326459,
       "httpOnly": false,
       "secure": true,
       "sameSite": "Lax"
@@ -32,17 +32,17 @@
     },
     {
       "name": "ravelinDeviceId",
-      "value": "rjs-ea0b157c-53ac-4674-a8e1-7c8b2e67ae30",
+      "value": "rjs-ea773609-4a70-4deb-afc9-76a0ba27c7b9",
       "domain": ".wolt.com",
       "path": "/",
-      "expires": 1702344012,
+      "expires": 1702427439,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "ravelinSessionId",
-      "value": "rjs-ea0b157c-53ac-4674-a8e1-7c8b2e67ae30:be12419f-727f-40e5-83bf-ad6fb8c17b1d",
+      "value": "rjs-ea773609-4a70-4deb-afc9-76a0ba27c7b9:d8216658-2b96-4ff4-b626-b330a022d579",
       "domain": ".wolt.com",
       "path": "/",
       "expires": -1,
@@ -52,43 +52,83 @@
     },
     {
       "name": "_gcl_au",
-      "value": "1.1.1886880144.1670808013",
+      "value": "1.1.1990371516.1670891440",
       "domain": ".wolt.com",
       "path": "/",
-      "expires": 1678584012,
+      "expires": 1678667439,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
-    },
-    {
-      "name": "_dd_s",
-      "value": "rum=2&id=1c792555-c725-4d95-812f-7ae454a0ebd5&created=1670808010157&expire=1670808912658",
-      "domain": "wolt.com",
-      "path": "/",
-      "expires": 1670808913,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Strict"
     },
     {
       "name": "cwc-consents",
       "value": "{%22analytics%22:true%2C%22functional%22:true%2C%22marketing%22:true}",
       "domain": ".wolt.com",
       "path": "/",
-      "expires": 1705368013.261145,
+      "expires": 1705451440.131273,
       "httpOnly": false,
       "secure": true,
       "sameSite": "Lax"
     },
     {
       "name": "__woltUid",
-      "value": "8406fb60-d59a-4cef-b320-bdb5e42ab928",
+      "value": "f5a32f5b-1b67-4955-bf3a-c08ec1a43fba",
       "domain": ".wolt.com",
       "path": "/",
-      "expires": 1705368013.430924,
+      "expires": 1705451440.326349,
       "httpOnly": false,
       "secure": true,
       "sameSite": "Lax"
+    },
+    {
+      "name": "test_cookie",
+      "value": "CheckForPermission",
+      "domain": ".doubleclick.net",
+      "path": "/",
+      "expires": 1670892340.407151,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_ga",
+      "value": "GA1.2.1633536460.1670891441",
+      "domain": ".wolt.com",
+      "path": "/",
+      "expires": 1705451440.592343,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_gid",
+      "value": "GA1.2.1332411207.1670891441",
+      "domain": ".wolt.com",
+      "path": "/",
+      "expires": 1670977840,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_gat_UA-56809017-2",
+      "value": "1",
+      "domain": ".wolt.com",
+      "path": "/",
+      "expires": 1670891500,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_dd_s",
+      "value": "rum=2&id=ae55aa37-ec74-4ea8-997c-20ff21b89fe7&created=1670891436949&expire=1670892340599",
+      "domain": "wolt.com",
+      "path": "/",
+      "expires": 1670892340,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Strict"
     }
   ],
   "origins": [
@@ -97,23 +137,27 @@
       "localStorage": [
         {
           "name": "AvoInspectorSessionTimestamp",
-          "value": "1670808013390"
+          "value": "1670891440378"
         },
         {
           "name": "bugsnag-anonymous-id",
-          "value": "clbk3y82p00003f6g36o4y3q3"
+          "value": "clblhmcjg00003f6gthyfnifa"
         },
         {
           "name": "AvoInspectorEvents",
-          "value": "[{\"apiKey\":\"BIxOURRemZ1gBoZwl9U1\",\"appName\":\"Consumer Web\",\"appVersion\":\"1.9.24\",\"libVersion\":\"1.3.0\",\"env\":\"prod\",\"libPlatform\":\"web\",\"messageId\":\"9972ed45-e2b8-4cb8-9e2e-06f211cc5bc2\",\"trackingId\":\"aaedc5b6-611f-4433-aad0-5448f1afd54e\",\"createdAt\":\"2022-12-12T01:20:13.389Z\",\"sessionId\":\"4aca5c8b-5bf6-41ef-ac96-67309d8c8e11\",\"samplingRate\":1,\"type\":\"sessionStarted\"},{\"apiKey\":\"BIxOURRemZ1gBoZwl9U1\",\"appName\":\"Consumer Web\",\"appVersion\":\"1.9.24\",\"libVersion\":\"1.3.0\",\"env\":\"prod\",\"libPlatform\":\"web\",\"messageId\":\"104f0dc9-1df0-4b0d-bc93-cea225fa3b4a\",\"trackingId\":\"aaedc5b6-611f-4433-aad0-5448f1afd54e\",\"createdAt\":\"2022-12-12T01:20:13.390Z\",\"sessionId\":\"4aca5c8b-5bf6-41ef-ac96-67309d8c8e11\",\"samplingRate\":1,\"type\":\"event\",\"eventName\":\"session_start\",\"eventProperties\":[{\"propertyName\":\"referrer_type\",\"propertyType\":\"string\"},{\"propertyName\":\"referred_link\",\"propertyType\":\"string\"},{\"propertyName\":\"referred_link_parameters\",\"propertyType\":\"object\",\"children\":[]}],\"avoFunction\":false,\"eventId\":null,\"eventHash\":null}]"
+          "value": "[{\"apiKey\":\"BIxOURRemZ1gBoZwl9U1\",\"appName\":\"Consumer Web\",\"appVersion\":\"1.9.24-PR7449\",\"libVersion\":\"1.3.0\",\"env\":\"prod\",\"libPlatform\":\"web\",\"messageId\":\"38684715-c8d9-4bb0-bbeb-2ddda836fb6a\",\"trackingId\":\"ebf4748d-04fa-42d7-8653-6c8b7251c0b9\",\"createdAt\":\"2022-12-13T00:30:40.378Z\",\"sessionId\":\"7455fe30-ecc2-452a-9ff0-62e031ba1bd3\",\"samplingRate\":1,\"type\":\"sessionStarted\"},{\"apiKey\":\"BIxOURRemZ1gBoZwl9U1\",\"appName\":\"Consumer Web\",\"appVersion\":\"1.9.24-PR7449\",\"libVersion\":\"1.3.0\",\"env\":\"prod\",\"libPlatform\":\"web\",\"messageId\":\"49c74f63-73d1-4932-a6ba-7820ae3f4eca\",\"trackingId\":\"ebf4748d-04fa-42d7-8653-6c8b7251c0b9\",\"createdAt\":\"2022-12-13T00:30:40.379Z\",\"sessionId\":\"7455fe30-ecc2-452a-9ff0-62e031ba1bd3\",\"samplingRate\":1,\"type\":\"event\",\"eventName\":\"session_start\",\"eventProperties\":[{\"propertyName\":\"referrer_type\",\"propertyType\":\"string\"},{\"propertyName\":\"referred_link\",\"propertyType\":\"string\"},{\"propertyName\":\"referred_link_parameters\",\"propertyType\":\"object\",\"children\":[]}],\"avoFunction\":false,\"eventId\":null,\"eventHash\":null}]"
+        },
+        {
+          "name": "intercom.intercom-state",
+          "value": "{\"app\":{\"openConfig\":{\"spaces\":[],\"userHasReceivedChecklists\":false},\"features\":{\"anonymousInboundMessages\":false,\"googleAnalytics\":false,\"inboundMessages\":false,\"outboundMessages\":false,\"googleAnalytics4Integration\":false},\"boundWebEvents\":[],\"isInstantBootEnabled\":true,\"isDeveloperWorkspace\":false},\"launcher\":{\"isLauncherEnabled\":false},\"launcherDiscoveryMode\":{\"hasDiscoveredLauncher\":false},\"user\":{},\"message\":{},\"conversations\":{\"byId\":{}},\"openOnBoot\":{\"type\":null,\"metadata\":{}},\"operator\":{\"lastComposerEvent\":0},\"router\":{\"location\":null,\"action\":null,\"previousLocations\":[]}}"
         },
         {
           "name": "AvoInspectorSessionId",
-          "value": "\"4aca5c8b-5bf6-41ef-ac96-67309d8c8e11\""
+          "value": "\"7455fe30-ecc2-452a-9ff0-62e031ba1bd3\""
         },
         {
           "name": "AvoInstallationId",
-          "value": "\"aaedc5b6-611f-4433-aad0-5448f1afd54e\""
+          "value": "\"ebf4748d-04fa-42d7-8653-6c8b7251c0b9\""
         }
       ]
     }

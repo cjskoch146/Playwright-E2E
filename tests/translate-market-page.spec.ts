@@ -1,5 +1,7 @@
 import { TranslateWidget } from "./page-object/market-page/translate";
 import { Categories } from "./page-object/market-page/categories";
+import { Products } from "./page-object/market-page/products";
+
 import { test, expect } from "@playwright/test";
 
 test.describe("User", () => {
@@ -38,9 +40,9 @@ test.describe("User", () => {
       "This product offering was translated from German to English by a machine."
     );
 
-    const products = page.getByRole("region", { name: "grid" });
-
-    await expect(products).toContainText(
+    // user can see that the menu grid has been updated
+    const products = new Products(page);
+    await expect(products.menuGrid).toContainText(
       "Archipel is the networking project launched by the Albatross Bakery"
     );
 
