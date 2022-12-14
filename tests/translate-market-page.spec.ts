@@ -22,9 +22,6 @@ test.describe("User", () => {
     await expect(translateWidget.translateBtn).toBeVisible();
     await translateWidget.translateBtn.scrollIntoViewIfNeeded();
     await translateWidget.translateBtn.click();
-    // above step can seem to be a bit flaky but will always successfully pass
-    // performing these steps via keyboard navigation e.g. via element.focus() and page.keyboard.press("Space") seems to run a bit more fluent
-
     await expect(translateWidget.languageCombobox).toBeVisible();
     await translateWidget.languageCombobox.click();
     await translateWidget.languageCombobox.selectOption({ index: 1 });
