@@ -1,10 +1,3 @@
-// go to specific page (beforeAll hook?)
-// accept cookies via POM mehtod
-// check that it is the right page
-// (check that everyhing is loaded)
-// search for an available product
-// pick a certain product
-// open up product & and check that everything is there
 // go one level deeper into the product itself
 import { Products } from "./page-object/market-page/products";
 
@@ -26,13 +19,39 @@ test.describe("User", () => {
 
     // can click on product to see more information
     await products.menuItem.click();
-    await expect(products.productModal).toBeVisible();
+    await expect(products.productModal).toBeVisible({
+      timeout: 5000,
+    });
     await expect(products.productModal).toContainText(
       "Salemipina Kirschtomatensauce Bio 330g"
     );
     await expect(products.itemImage).toBeVisible();
-
     await expect(products.itemUnitInfo).toContainText("330 g");
     await expect(products.unitPrice).toContainText("4.09 €/kg");
+    await expect(products.productModal).toContainText(
+      "Auch Basilikum und Olivenöl werden von diesem Unternehmen selbst hergestellt"
+    );
+    await expect(products.addToOrderBtn).toBeVisible();
+    await expect(products.addToOrderBtn).toContainText("Add to order");
+    await expect(products.addToOrderBtn).toBeEnabled();
+
+    // can open "Product Info"
+    await products.productInfoBtn.click();
+    await products.checkProductInfoFrame(
+      "Salemipina Kirschtomatensauce Bio 330g",
+      "Das sagt viel über den Ansatz aus, den dieser brillante kleine Sizilianer"
+    );
+
+    await products.checkCountryOfOrigin("Country of origin", "Italien");
+    await products.checkNutritionFactsTable(
+      "307kJ",
+      "73kcal",
+      "3.5g",
+      "0.5g",
+      "9g",
+      "9g",
+      "1g",
+      "1.1g"
+    );
   });
 });
