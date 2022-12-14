@@ -23,7 +23,6 @@ test.describe("User", () => {
     await translateWidget.translateBtn.scrollIntoViewIfNeeded();
     await translateWidget.translateBtn.click();
     // above step can seem to be a bit flaky but will always successfully pass
-    // under different circumstances I would probably see if adding a unique data-test-id would help
     // performing these steps via keyboard navigation e.g. via element.focus() and page.keyboard.press("Space") seems to run a bit more fluent
 
     await expect(translateWidget.languageCombobox).toBeVisible();

@@ -1,6 +1,4 @@
-// go one level deeper into the product itself
 import { Products } from "./page-object/market-page/products";
-
 import { test, expect } from "@playwright/test";
 
 test.describe("User", () => {
