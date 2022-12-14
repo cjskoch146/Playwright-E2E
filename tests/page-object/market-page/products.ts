@@ -144,6 +144,34 @@ export class Products {
     }
   }
 
-  // async producerInfortmation() {}
-  // async distributerInformation() {}
+  async producerInfortmation(producerInformationInLocale, nameAddressInLocale) {
+    const frame = this.page.frameLocator(
+      '[data-test-id="product-modal"] iframe'
+    );
+    const producerInformation = frame.getByRole("heading", {
+      name: `${producerInformationInLocale}`,
+    });
+    const producerAddress = frame.getByText(nameAddressInLocale);
+
+    await expect(producerInformation).toBeVisible();
+    await expect(producerAddress).toBeVisible();
+    await expect(producerAddress).toContainText(nameAddressInLocale);
+  }
+
+  async distributerInformation(
+    distributerInfoInLocale,
+    distributerAddressInLocale
+  ) {
+    const frame = this.page.frameLocator(
+      '[data-test-id="product-modal"] iframe'
+    );
+    const distributerInfo = frame.getByRole("heading", {
+      name: `${distributerInfoInLocale}`,
+    });
+    const distributerAddress = frame.getByText(distributerAddressInLocale);
+
+    await expect(distributerInfo).toBeVisible();
+    await expect(distributerAddress).toBeVisible();
+    await expect(distributerAddress).toContainText(distributerAddressInLocale);
+  }
 }

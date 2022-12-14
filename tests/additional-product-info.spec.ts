@@ -60,5 +60,19 @@ test.describe("User", () => {
       "1g",
       "1.1g"
     );
+
+    await products.producerInfortmation(
+      "Producer Information",
+      `Salemi Pina
+    via Platani 24
+    96010 Sortino SR, ITALY`
+    );
+
+    await products.distributerInformation(
+      "Distributor information",
+      `Archipel
+    Graefestrasse 66/67
+    10967 Berlin`
+    );
   });
 });
