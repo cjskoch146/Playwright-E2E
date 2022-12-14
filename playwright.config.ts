@@ -34,7 +34,6 @@ const config: PlaywrightTestConfig = {
   reporter: [["list"], ["html", { open: "never" }]],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
-    viewport: { width: 1280, height: 900 },
     headless: false,
     baseURL:
       "https://wolt.com/en/deu/berlin/venue/wolt-market-danziger-strasse",
@@ -54,6 +53,7 @@ const config: PlaywrightTestConfig = {
       use: {
         ...devices["Desktop Chrome"],
         storageState: "storageState.json",
+        viewport: { width: 1920, height: 1080 },
       },
     },
 
