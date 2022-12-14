@@ -88,7 +88,35 @@ export class Products {
     await expect(manufacturerCountry).toBeVisible();
   }
 
-  // async checkIngredients() {}
+  async checkIngredients(ingredientsInLocale, partOfIngredientsDetailInLocale) {
+    const frame = this.page.frameLocator(
+      '[data-test-id="product-modal"] iframe'
+    );
+    const ingredients = frame.getByRole("heading", {
+      name: `${ingredientsInLocale}`,
+    });
+    const ingredientsDetails = frame.getByText(partOfIngredientsDetailInLocale);
+
+    await expect(ingredients).toBeVisible();
+    await expect(ingredientsDetails).toBeVisible();
+    await expect(ingredientsDetails).toContainText(
+      partOfIngredientsDetailInLocale
+    );
+  }
+
+  async checkNutritions(nutritionFactsInLocale, amountPer) {
+    const frame = this.page.frameLocator(
+      '[data-test-id="product-modal"] iframe'
+    );
+    const nutritionFacts = frame.getByRole("heading", {
+      name: `${nutritionFactsInLocale}`,
+    });
+    const amount = frame.getByText(amountPer);
+
+    await expect(nutritionFacts).toBeVisible();
+    await expect(amount).toBeVisible();
+    await expect(amount).toContainText(amountPer);
+  }
 
   async checkNutritionFactsTable(
     energyKJ,
@@ -105,7 +133,7 @@ export class Products {
     );
     const nutrtionTable = frame.locator("ul > li");
     for (let i = 0; i < (await nutrtionTable.count()); i++) {
-      // await expect(nutrtionTable.nth(i)).toBeVisible();
+      await expect(nutrtionTable.nth(i)).toBeVisible();
       await expect(nutrtionTable.nth(0)).toContainText(energyKJ + energyKCAL);
       await expect(nutrtionTable.nth(1)).toContainText(fat);
       await expect(nutrtionTable.nth(2)).toContainText(saturates);
@@ -115,4 +143,7 @@ export class Products {
       await expect(nutrtionTable.nth(6)).toContainText(salt);
     }
   }
+
+  // async producerInfortmation() {}
+  // async distributerInformation() {}
 }

@@ -35,13 +35,20 @@ test.describe("User", () => {
     await expect(products.addToOrderBtn).toContainText("Add to order");
     await expect(products.addToOrderBtn).toBeEnabled();
 
-    // can open "Product Info"
+    // can open "Product Info" and read more about the chosen product
     await products.productInfoBtn.click();
     await products.checkProductInfoFrame(
       "Salemipina Kirschtomatensauce Bio 330g",
       "Das sagt viel über den Ansatz aus, den dieser brillante kleine Sizilianer"
     );
 
+    await products.checkIngredients(
+      "Ingredients",
+      `Extra Virgin 
+    Olive Oil, sea salt, basil (0.3%), may 
+    contain traces of celery and nuts`
+    );
+    await products.checkNutritions("Nutrition facts", "Amount per 100 g");
     await products.checkCountryOfOrigin("Country of origin", "Italien");
     await products.checkNutritionFactsTable(
       "307kJ",
